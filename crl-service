@@ -1,0 +1,16 @@
+#!/bin/bash
+while :
+do
+	echo "[] Pushing CRL"
+	#Retrieve the servers 
+	source pki
+	while read server           
+	do           
+	   date +"%D"
+	   echo "Pushing to $server"
+   	   scp ca/crl.pem student-admin@$server:~
+	done <server-list.txt 
+	#Push the CRL every day
+	echo "Work done. Sleeping for today"
+	sleep 86400
+done

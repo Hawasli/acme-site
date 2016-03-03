@@ -1,0 +1,22 @@
+# ca.cnf
+# This configuration file is used by the 'req' command when the root certificates is created.
+[ req ]
+default_bits            = 2048                  # default strength of client certificates
+default_md              = sha256
+encrypt_key             = yes                   # "no" is equivalent to -nodes
+prompt                  = no
+string_mask             = utf8only
+distinguished_name      = ca_acme     # root certificate name
+req_extensions          = req_cert_extensions
+# attributes              = req_attributes
+
+[ ca_acme ]
+# root certificate name
+countryName             = SW
+localityName            = Stockholm
+organizationName        = ACME
+commonName              = OpenVPN-ACME-CA
+
+[ req_cert_extensions ]
+# nsCertType              = server
+subjectAltName          = email:hostmaster@acme.sw

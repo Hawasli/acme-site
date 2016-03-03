@@ -1,0 +1,22 @@
+# server.cnf
+# This configuration file is used by the 'req' command when the server certificate is created.
+[ req ]
+default_bits            = 2048
+default_md              = sha256
+encrypt_key             = no
+prompt                  = no
+string_mask             = utf8only
+distinguished_name      = {{server_id}}
+req_extensions          = req_cert_extensions
+# attributes              = req_attributes
+
+[ {{server_id}} ]
+countryName             = SW
+localityName            = Stockholm
+organizationName        = ACME
+commonName              = {{server_id}}
+emailAddress            = hostmaster@acme.sw
+
+[ req_cert_extensions ]
+nsCertType              = server
+subjectAltName          = email:hostmaster@acme.sw
