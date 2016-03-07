@@ -1,5 +1,6 @@
 <?php
-$temporal_cert = shell_exec("./gen_temp_cert.bash temporal_certificate");
+//$temporal_cert = shell_exec("./gen_temp_cert.bash temporal_certificate");
+	
 ?>
 <!DOCTYPE html>
 <!-- Website template by freewebsitetemplates.com -->
