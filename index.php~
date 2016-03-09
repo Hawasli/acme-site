@@ -1,6 +1,5 @@
 <?php
 //$temporal_cert = shell_exec("./gen_temp_cert.bash temporal_certificate");
-	
 ?>
 <!DOCTYPE html>
 <!-- Website template by freewebsitetemplates.com -->
@@ -45,7 +44,7 @@
 				<div id="section">
 					<div class="footer">
 						<div class="body">
-							<ul style="margin-left: 140px;" class="article">
+							<ul class="article">
 								<li class="first">
 									<a href="index.php"><img src="images/CRL.jpg" width="256" height="166" alt="ACME Corp."></a>
 									<h2><a href="index.html">Download Certificate Revocation List</a></h2>
@@ -54,22 +53,22 @@
 									</p>
 									<a href="./download_crl.php" class="readmore">Download</a>
 								</li>
-								<li class="last">
+								<li>
 									<a href="index.php"><img src="images/certificate.jpg" width="256" height="166" alt="ACME Corp."></a>
 									<h2><a href="index.html">Request a Temporal Certificate</a></h2>
 									<p>
-										Here you can request a limited certificate that allows you to use your computer at home to connect to ACME internal network and start using our services.
+										Request a limited time certificate that allows you to use your non-corporate computer at home to connect to ACME internal network and use its our services.
 									</p>
 									<a href="./download_temporal_cert.php" class="readmore">Request</a>
 								</li>
-								<!--<li class="last">
-									<a href="index.php"><img src="images/disk.jpg" width="256" height="166" alt="ACME Corp."></a>
-									<h2><a href="index.html">Add new function here ...</a></h2>
+								<li class="last">
+									<a href="index.php"><img src="images/certificate_wifi.jpg" width="256" height="166" alt="ACME Corp."></a>
+									<h2><a href="index.html">Request a Temoral Certificate for WiFi</a></h2>
 									<p>
-										Add more functionalities</br></br></br></br></br>
+										Request a limited time certificate that allows you to use your non-corporate computer connect to ACME WiFi in London
 									</p>
-									<a href="index.php" class="readmore">Read More</a>
-								</li>-->
+									<a href="./download_temporal_cert.php" class="readmore">Request</a>
+								</li>
 							</ul>
 						</div>
 					</div>
