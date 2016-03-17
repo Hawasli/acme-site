@@ -1,4 +1,5 @@
 <?php
+
 $date = new DateTime();
 $time_stamp = $date->getTimestamp();
 $file_name = "temporal_certificate_" . $time_stamp;
@@ -16,3 +17,4 @@ if (file_exists($file)) {
     readfile($file);
     exit;
 }
+?>

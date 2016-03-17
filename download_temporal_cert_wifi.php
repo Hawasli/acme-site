@@ -2,9 +2,8 @@
 $date = new DateTime();
 $time_stamp = $date->getTimestamp();
 $file_name = "temporal_certificate_for_wifi_" . $time_stamp;
-$temporal_cert = shell_exec("./wireless-pki/get-temporal-wireless.sh $file_name");
+$temporal_cert = shell_exec("./get-temporal-wireless.sh $file_name");
 $file = $file_name . '.zip';
-
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
@@ -16,3 +15,4 @@ if (file_exists($file)) {
     readfile($file);
     exit;
 }
+?>
